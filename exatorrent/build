@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+make web
+make app
+install -Dm755 -t "$1"/usr/bin build/exatorrent
